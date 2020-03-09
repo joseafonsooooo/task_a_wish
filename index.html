@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Task a Wish</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/myscript.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+<div >
+    <div class="row" id="create-tasks">
+
+        <!--Lista Formatos-->
+        <div class=" col-md-3 card p-5 lateral-esq">
+
+            <ul class="list-group mb-5 mylist">
+                <li class="list-group-item btn-light" id="page1-button">GDN <span class="float-right counters" id="count1"> </span></li>
+                <li class="list-group-item btn-light" id="page2-button">Facebook / Instagram <span class="float-right counters" id="count2"> </span></li>
+                <li class="list-group-item btn-light" id="page3-button">Email Marketing <span class="float-right counters" id="count3"> </span></li>
+                <li class="list-group-item btn-light" id="page4-button">GSP <span class="float-right counters" id="count4"> </span></li>
+                <li class="list-group-item btn-light" id="page5-button">IGN <span class="float-right counters" id="count5"> </span></li>
+                <li class="list-group-item btn-light" id="page6-button">Media Capital <span class="float-right counters" id="count6"> </span></li>
+                <li class="list-group-item btn-light" id="page7-button">Forretas / Descontos <span class="float-right counters" id="count7"> </span></li>
+                <li class="list-group-item btn-light" id="page8-button">MSN <span class="float-right counters" id="count8"> </span></li>
+                <li class="list-group-item btn-light" id="page9-button">Netaffiliation <span class="float-right counters" id="count9"> </span></li>
+                <li class="list-group-item btn-light" id="page10-button">Eurogamer <span class="float-right counters" id="count10"> </span></li>
+                <li class="list-group-item btn-light" id="page11-button">KuantoKusta <span class="float-right counters" id="count11"> </span></li>
+                <li class="list-group-item btn-light" id="page12-button">Tindeo <span class="float-right counters" id="count12"> </span></li>
+                <li class="list-group-item btn-light" id="page13-button">Público <span class="float-right counters" id="count13"> </span></li>
+                <li class="list-group-item btn-light" id="page14-button">Global Media <span class="float-right counters" id="count14"> </span></li>
+                <li class="list-group-item btn-light" id="page15-button">Sapo <span class="float-right counters" id="count15"> </span></li>
+                <li class="list-group-item btn-light" id="page16-button">Expresso <span class="float-right counters" id="count16"> </span></li>
+                <li class="list-group-item btn-light" id="page17-button">Observador <span class="float-right counters" id="count17"> </span></li>
+                <li class="list-group-item btn-light" id="page18-button">Cofina <span class="float-right counters" id="count18"> </span></li>
+                <li class="list-group-item btn-light" id="page19-button">Olx <span class="float-right counters" id="count19"> </span></li>
+                <li class="list-group-item btn-light" id="page20-button">Record <span class="float-right counters" id="count20"> </span></li>
+                <li class="list-group-item btn-light" id="page21-button">O Jogo <span class="float-right counters" id="count21"> </span></li>
+            </ul>
+
+            <!-- Counter Total
+            <div>
+                <span class="float-right counters mb-5" id="countTotal"> </span>
+            </div>
+            -->
+            <button type="button" class="btn btn-lg btn-block btn-primary mb-5" id="cleanSelected">Clean selected</button>
+
+        
+            <!--Task Name-->
+            <label for="firstName" class="">Task Name</label>
+            <input type="text" class="form-control " id="firstName" placeholder="" value="" required="">
+            <!--Task SKUs-->
+            <label for="firstName" class="mt-3">Image 1</label>
+            <input type="text" class="form-control " id="firstName" placeholder=" " value="" required="">
+
+            <label for="firstName" class="mt-3">Image 2</label>
+            <input type="text" class="form-control" id="firstName" placeholder=" " value="" required="">
+
+            <!-- CTA -->
+            <label for="firstName" class="mt-3">Button Text</label>
+            <input type="text" class="form-control" id="firstName" placeholder=" " value="" required="">
+
+            <!-- Legal -->
+            <label for="firstName" class="mt-3">Notes</label>
+            <input type="text" class="form-control mb-5" id="firstName" placeholder=" " value="" required="">
+
+            <div class="invalid-feedback">
+            Invalid Data
+            </div>
+
+            <button type="button" id="create-btn" class="btn btn-lg btn-block btn-primary mb-4">Create tasks!</button>
+            
+        </div>
+
+   
+
+
+
+
+
+
+
+        <!------------------------------------------
+        ---------------- Page1 GDN ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page1">
+            
+            <div class="row">
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="gdn-billboard">
+                        <h2 class="mt-2 mb-2 text-center">Billboard</h2>
+                        <span class="text-center mb-4">970 x 250</span>
+                          
+                        <div style="background-image:url(assets/GDN/billboard.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="gdn-halfpage">
+                        <h2 class="mt-2 mb-2 text-center">Halfpage</h2>
+                        <span class="text-center mb-4">300 x 600</span>
+                         
+                        <div style="background-image:url(assets/GDN/halfpage.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="gdn-mrec">
+                        <h2 class="mt-2 mb-2 text-center">Medium Rectangle</h2>
+                        <span class="text-center mb-4">300 x 250</span>
+                         
+                        <div style="background-image:url(assets/GDN/medium-rectangle.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="gdn-lrec">
+                        <h2 class="mt-2 mb-2 text-center">Large Rectangle</h2>
+                        <span class="text-center mb-4">336 x 280</span>
+                         
+                        <div style="background-image:url(assets/GDN/large-rectangle.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="gdn-leaderboard">
+                        <h2 class="mt-2 mb-2 text-center">Leaderboard</h2>
+                        <span class="text-center mb-4">728 x 90</span>
+                         
+                        <div style="background-image:url(assets/GDN/leaderboard.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="gdn-largemobilebanner">
+                        <h2 class="mt-2 mb-2 text-center">Large Mobile Banner</h2>
+                        <span class="text-center mb-4">320 x 100</span>
+                         
+                        <div style="background-image:url(assets/GDN/large-mobile-banner.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                 <!--Peca-->
+                 <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="gdn-widesky">
+                        <h2 class="mt-2 mb-2 text-center">Wide Sky</h2>
+                        <span class="text-center mb-4">160 x 600</span>
+                         
+                        <div style="background-image:url(assets/GDN/widesky.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                 <!--Peca-->
+                 <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="gdn-sky">
+                        <h2 class="mt-2 mb-2 text-center">Sky</h2>
+                        <span class="text-center mb-4">120 x 600</span>
+                         
+                        <div style="background-image:url(assets/GDN/sky.png)" class="peca"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!------------------------------------------
+        ---------------- Page2 Facebook/Instagram ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page2">
+            
+            <div class="row">
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="fb-post">
+                        <h2 class="mt-2 mb-2 text-center">Post</h2>
+                        <span class="text-center mb-4">1080 x 1080</span>
+                          
+                        <div style="background-image:url(assets/FBIG/Post.jpg)" class="peca"></div>
+                    </div>
+                </div>
+
+               <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="fb-story">
+                        <h2 class="mt-2 mb-2 text-center">Story</h2>
+                        <span class="text-center mb-4">1080 x 1920</span>
+                          
+                        <div style="background-image:url(assets/FBIG/InstaStory.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="fb-coldireitaad">
+                        <h2 class="mt-2 mb-2 text-center">Coluna direita/Ad</h2>
+                        <span class="text-center mb-4">1200 x 628</span>
+                          
+                        <div style="background-image:url(assets/FBIG/FB_ad_right_col.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="fb-videovertical">
+                        <h2 class="mt-2 mb-2 text-center">Vídeo vertical</h2>
+                        <span class="text-center mb-4">768 x 1024</span>
+                          
+                        <div style="background-image:url(assets/FBIG/FB_video_vertical.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="fb-videohorizontal">
+                        <h2 class="mt-2 mb-2 text-center">Vídeo horizontal</h2>
+                        <span class="text-center mb-4">1920 x 1080</span>
+                          
+                        <div style="background-image:url(assets/FBIG/FB_video_horizontal.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="fb-cover">
+                        <h2 class="mt-2 mb-2 text-center">Cover</h2>
+                        <span class="text-center mb-4">1920 x 1080</span>
+                          
+                        <div style="background-image:url(assets/FBIG/FB_cover.png)" class="peca"></div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+         <!------------------------------------------
+        ---------------- Page3 Email MKT ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page3">
+            
+            <div class="row">
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="email-marketing">
+                        <h2 class="mt-2 mb-2 text-center">Email Marketing</h2>
+                        <span class="text-center mb-4">700 x 850</span>
+                          
+                        <div style="background-image:url(assets/EmailMkt/EmailMKT.jpg)" class="peca"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+          <!------------------------------------------
+        ---------------- Page4 GSP ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page4">
+            
+            <div class="row">
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="gsp-collapsedlogo">
+                        <h2 class="mt-2 mb-2 text-center">Collapsed Logo</h2>
+                        <span class="text-center mb-4">144 x 144</span>
+                          
+                        <div style="background-image:url(assets/GSP/CollapsedLogo.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="gsp-expanded">
+                        <h2 class="mt-2 mb-2 text-center">Expanded</h2>
+                        <span class="text-center mb-4">650 x 1000</span>
+                          
+                        <div style="background-image:url(assets/GSP/Expanded.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="gsp-logoquadrado">
+                        <h2 class="mt-2 mb-2 text-center">Logo quadrado</h2>
+                        <span class="text-center mb-4">1200 x 1200</span>
+                          
+                        <div style="background-image:url(assets/GSP/LogoQuadrado.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="gsp-imgpaisagem">
+                        <h2 class="mt-2 mb-2 text-center">Imagem de marketing paisagem</h2>
+                        <span class="text-center mb-4">794 x 72</span>
+                          
+                        <div style="background-image:url(assets/GSP/ImagemDeMktPaisagem.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="gsp-imgquadrado">
+                        <h2 class="mt-2 mb-2 text-center">Imagem de marketing quadrada</h2>
+                        <span class="text-center mb-4">1200 x 1200</span>
+                          
+                        <div style="background-image:url(assets/GSP/ImagemDeMktQuadrado.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="gsp-imgcabecalho">
+                        <h2 class="mt-2 mb-2 text-center">Imagem de cabeçalho</h2>
+                        <span class="text-center mb-4">1200 x 400</span>
+                          
+                        <div style="background-image:url(assets/GSP/ImagemCabeçalho.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="gsp-minivideo">
+                        <h2 class="mt-2 mb-2 text-center">Miniatura de vídeo</h2>
+                        <span class="text-center mb-4">324 x 183</span>
+                          
+                        <div style="background-image:url(assets/GSP/MiniaturaVideo.png)" class="peca"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+         <!------------------------------------------
+        ---------------- Page5 IGN ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page5">
+            
+            <div class="row">
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="ign-halfpage">
+                        <h2 class="mt-2 mb-2 text-center">Halfpage</h2>
+                        <span class="text-center mb-4">300 x 600</span>
+                          
+                        <div style="background-image:url(assets/IGN/Halfpage.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="ign-skin">
+                        <h2 class="mt-2 mb-2 text-center">Skin</h2>
+                        <span class="text-center mb-4">1500 x 1000</span>
+                          
+                        <div style="background-image:url(assets/IGN/Skin.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="ign-topslidermobile">
+                        <h2 class="mt-2 mb-2 text-center">Top Slider Mobile</h2>
+                        <span class="text-center mb-4">640 x 270</span>
+                          
+                        <div style="background-image:url(assets/IGN/TopSliderMobile.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                 <!--Peca-->
+                 <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="ign-topslidermobile-s">
+                        <h2 class="mt-2 mb-2 text-center">Top Slider Mobile S</h2>
+                        <span class="text-center mb-4">640 x 172</span>
+                          
+                        <div style="background-image:url(assets/IGN/TopSliderMobileS.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="ign-topsliderdesktop">
+                        <h2 class="mt-2 mb-2 text-center">Top Slider Desktop</h2>
+                        <span class="text-center mb-4">1950 x 500</span>
+                          
+                        <div style="background-image:url(assets/IGN/TopSliderDesktop.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="ign-topsliderdesktop-s">
+                        <h2 class="mt-2 mb-2 text-center">Top Slider Desktop S</h2>
+                        <span class="text-center mb-4">1920 x 300</span>
+                          
+                        <div style="background-image:url(assets/IGN/TopSliderDesktopS.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="ign-mobileintlandscape">
+                        <h2 class="mt-2 mb-2 text-center">Mobile Interstitial Landscape</h2>
+                        <span class="text-center mb-4">640 x 323</span>
+                          
+                        <div style="background-image:url(assets/IGN/MobileInterstitialLandscape.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="ign-mobileintportrait">
+                        <h2 class="mt-2 mb-2 text-center">Mobile Interstitial Portrait</h2>
+                        <span class="text-center mb-4">384 x 615</span>
+                          
+                        <div style="background-image:url(assets/IGN/MobileInterstitialPortrait.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="ign-topslidervideo">
+                        <h2 class="mt-2 mb-2 text-center">Top Slider Video</h2>
+                        <span class="text-center mb-4">640 x 360</span>
+                          
+                        <div style="background-image:url(assets/IGN/TopSliderVideo.png)" class="peca"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <!------------------------------------------
+        ---------------- Page6 Media Capital ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page6">
+            
+            <div class="row">
+                
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="mc-lrec">
+                        <h2 class="mt-2 mb-2 text-center">Large Rectangle</h2>
+                        <span class="text-center mb-4">336 x 280</span>
+                          
+                        <div style="background-image:url(assets/MediaCapital/Large_Rectangle.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="mc-largemobilebanner">
+                        <h2 class="mt-2 mb-2 text-center">Large Mobile Banner</h2>
+                        <span class="text-center mb-4">320 x 50</span>
+                          
+                        <div style="background-image:url(assets/MediaCapital/Large_Mobile_Banner.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                 <div class=" col-md-4 p-2 ">
+                   <div class="card option p-3" data-module="mc-billboardxlfundo">
+                       <h2 class="mt-2 mb-2 text-center">Billboard XL Fundo </h2>
+                       <span class="text-center mb-4">1900 x 285</span>
+                          
+                       <div style="background-image:url(assets/MediaCapital/Billboard_XL_Fundo.png)" class="peca"></div>
+                   </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="mc-billboardxlimg">
+                        <h2 class="mt-2 mb-2 text-center">Billboard XL Imagem Detalhe</h2>
+                        <span class="text-center mb-4">1900 x 285</span>
+                           
+                        <div style="background-image:url(assets/MediaCapital/Billboard_XL_Imagem_detalhe.png)" class="peca"></div>
+                    </div>
+                 </div>
+
+                 <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="mc-billboard">
+                        <h2 class="mt-2 mb-2 text-center">Billboard</h2>
+                        <span class="text-center mb-4">980 x 250</span>
+                           
+                        <div style="background-image:url(assets/MediaCapital/Billboard.png)" class="peca"></div>
+                    </div>
+                 </div>
+
+
+            </div>
+
+            
+        </div>
+
+
+        <!------------------------------------------
+        ---------------- Page7 Forretas/Descontos ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page7">
+            
+            <div class="row">
+                
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="forr-html">
+                        <h2 class="mt-2 mb-2 text-center">HTML</h2>
+                        <span class="text-center mb-4">940 x 700</span>
+                          
+                        <div style="background-image:url(assets/Forretas_Descontos/HTML.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="forr-imagemoferta">
+                        <h2 class="mt-2 mb-2 text-center">Imagem Oferta</h2>
+                        <span class="text-center mb-4">468 x 361</span>
+                          
+                        <div style="background-image:url(assets/Forretas_Descontos/ImagemOferta.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="forr-molduratopo">
+                        <h2 class="mt-2 mb-2 text-center">Moldura Topo</h2>
+                        <span class="text-center mb-4">940 x 120</span>
+                          
+                        <div style="background-image:url(assets/Forretas_Descontos/MolduraTopo.png)" class="peca"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <!------------------------------------------
+        ---------------- Page8 MSN ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page8">
+            
+            <div class="row">
+                
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="msn-billboard">
+                        <h2 class="mt-2 mb-2 text-center">Billboard</h2>
+                        <span class="text-center mb-4">1272 x 328</span>
+                          
+                        <div style="background-image:url(assets/MSN/Billboard.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="msn-halfpage">
+                        <h2 class="mt-2 mb-2 text-center">Halfpage</h2>
+                        <span class="text-center mb-4">300 x 600</span>
+                          
+                        <div style="background-image:url(assets/MSN/Halfpage.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="msn-mrec">
+                        <h2 class="mt-2 mb-2 text-center">Medium Rectangle</h2>
+                        <span class="text-center mb-4">300 x 250</span>
+                          
+                        <div style="background-image:url(assets/MSN/Medium_Rectangle.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="msn-largemobilebanner">
+                        <h2 class="mt-2 mb-2 text-center">Large Mobile Banner</h2>
+                        <span class="text-center mb-4">320 x 50</span>
+                          
+                        <div style="background-image:url(assets/MSN/Large_Mobile_Banner.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="msn-leaderboard">
+                        <h2 class="mt-2 mb-2 text-center">Leaderboard</h2>
+                        <span class="text-center mb-4">728 x 90</span>
+                          
+                        <div style="background-image:url(assets/MSN/Leaderboard.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="msn-widesky">
+                        <h2 class="mt-2 mb-2 text-center">Wide Sky</h2>
+                        <span class="text-center mb-4">160 x 600</span>
+                          
+                        <div style="background-image:url(assets/MSN/Wide_Sky.png)" class="peca"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <!------------------------------------------
+        ---------------- Page9 Netaffiliation ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page9">
+            
+            <div class="row">
+                
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="netaffiliation-halfpage">
+                        <h2 class="mt-2 mb-2 text-center">Halfpage</h2>
+                        <span class="text-center mb-4">300 x 600</span>
+                          
+                        <div style="background-image:url(assets/Netaffiliation/Halfpage.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="netaffiliation-mrec">
+                        <h2 class="mt-2 mb-2 text-center">Medium Rectangle</h2>
+                        <span class="text-center mb-4">300 x 250</span>
+                          
+                        <div style="background-image:url(assets/Netaffiliation/Medium_Rectangle.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="netaffiliation-landscape">
+                        <h2 class="mt-2 mb-2 text-center">Netaffiliation landscape</h2>
+                        <span class="text-center mb-4">760 x 460</span>
+                          
+                        <div style="background-image:url(assets/Netaffiliation/Netaffiliation_landscape.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="netaffiliation-portrait">
+                        <h2 class="mt-2 mb-2 text-center">Netaffiliation portrait</h2>
+                        <span class="text-center mb-4">320 x 480</span>
+                          
+                        <div style="background-image:url(assets/Netaffiliation/Netaffiliation_portrait.png)" class="peca"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <!------------------------------------------
+        ---------------- Page10 Eurogamer ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page10">
+            
+            <div class="row">
+                
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="eurogamer-billboard">
+                        <h2 class="mt-2 mb-2 text-center">Billboard</h2>
+                        <span class="text-center mb-4">1260 x 250</span>
+                          
+                        <div style="background-image:url(assets/Eurogamer/Billboard.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="eurogamer-botao">
+                        <h2 class="mt-2 mb-2 text-center">Botão</h2>
+                        <span class="text-center mb-4">128 x 72</span>
+                          
+                        <div style="background-image:url(assets/Eurogamer/Botao.jpg)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="eurogamer-fundo">
+                        <h2 class="mt-2 mb-2 text-center">Fundo</h2>
+                        <span class="text-center mb-4">2500 x 1316</span>
+                          
+                        <div style="background-image:url(assets/Eurogamer/Fundo.jpg)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="eurogamer-halfpage">
+                        <h2 class="mt-2 mb-2 text-center">Halfpage</h2>
+                        <span class="text-center mb-4">300 x 600</span>
+                          
+                        <div style="background-image:url(assets/Eurogamer/Halfpage.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="eurogamer-widebanner">
+                        <h2 class="mt-2 mb-2 text-center">Widebanner</h2>
+                        <span class="text-center mb-4">534 x 165</span>
+                          
+                        <div style="background-image:url(assets/Eurogamer/widebanner.png)" class="peca"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <!------------------------------------------
+        ---------------- Page11 KuantoKusta ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page11">
+            
+            <div class="row">
+                
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="kk-banner">
+                        <h2 class="mt-2 mb-2 text-center">Banner</h2>
+                        <span class="text-center mb-4">1170 x 300</span>
+                          
+                        <div style="background-image:url(assets/KuantoKusta/Banner.png)" class="peca"></div>
+                    </div>
+                </div>
+                
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="kk-banner-s">
+                        <h2 class="mt-2 mb-2 text-center">Banner S</h2>
+                        <span class="text-center mb-4">411 x 170</span>
+                          
+                        <div style="background-image:url(assets/KuantoKusta/Banner2.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="kk-banner-xs">
+                        <h2 class="mt-2 mb-2 text-center">Banner XS</h2>
+                        <span class="text-center mb-4">320 x 170</span>
+                          
+                        <div style="background-image:url(assets/KuantoKusta/Banner1.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="kk-largemobilebanner">
+                        <h2 class="mt-2 mb-2 text-center">Large Mobile Banner</h2>
+                        <span class="text-center mb-4">320 x 100</span>
+                          
+                        <div style="background-image:url(assets/KuantoKusta/Large_Mobile_Banner.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="kk-leaderboard">
+                        <h2 class="mt-2 mb-2 text-center">Leaderboard</h2>
+                        <span class="text-center mb-4">728 x 90</span>
+                          
+                        <div style="background-image:url(assets/KuantoKusta/Leaderboard.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="kk-mrec">
+                        <h2 class="mt-2 mb-2 text-center">Medium Rectangle</h2>
+                        <span class="text-center mb-4">300 x 250</span>
+                          
+                        <div style="background-image:url(assets/KuantoKusta/Medium_Rectangle.png)" class="peca"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <!------------------------------------------
+        ---------------- Page12 Tindeo ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page12">
+            
+            <div class="row">
+                
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="tindeo-leaderboard">
+                        <h2 class="mt-2 mb-2 text-center">Leaderboard</h2>
+                        <span class="text-center mb-4">728 x 90</span>
+                          
+                        <div style="background-image:url(assets/Tindeo/Leaderboard.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="tindeo-quadrado">
+                        <h2 class="mt-2 mb-2 text-center">Quadrado</h2>
+                        <span class="text-center mb-4">250 x 250</span>
+                          
+                        <div style="background-image:url(assets/Tindeo/Quadrado.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="tindeo-widesky">
+                        <h2 class="mt-2 mb-2 text-center">Wide Sky</h2>
+                        <span class="text-center mb-4">160 x 600</span>
+                          
+                        <div style="background-image:url(assets/Tindeo/Wide_Sky.png)" class="peca"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <!------------------------------------------
+        ---------------- Page13 Público ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page13">
+            
+            <div class="row">
+                
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="publico-halfpage">
+                        <h2 class="mt-2 mb-2 text-center">Halfpage</h2>
+                        <span class="text-center mb-4">300 x 600</span>
+                          
+                        <div style="background-image:url(assets/Publico/Halfpage.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="publico-largemobilebanner">
+                        <h2 class="mt-2 mb-2 text-center">Large Mobile Banner</h2>
+                        <span class="text-center mb-4">320 x 100</span>
+                          
+                        <div style="background-image:url(assets/Publico/Large_Mobile_Banner.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="publico-leaderboard">
+                        <h2 class="mt-2 mb-2 text-center">Leaderboard</h2>
+                        <span class="text-center mb-4">1140 x 50</span>
+                          
+                        <div style="background-image:url(assets/Publico/Leaderboard.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="publico-mrec">
+                        <h2 class="mt-2 mb-2 text-center">Medium Rectangle</h2>
+                        <span class="text-center mb-4">300 x 250</span>
+                          
+                        <div style="background-image:url(assets/Publico/Medium_Rectangle.png)" class="peca"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <!------------------------------------------
+        ---------------- Page14 Global Media ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page14">
+            
+            <div class="row">
+                
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="gm-halfpage">
+                        <h2 class="mt-2 mb-2 text-center">Halfpage</h2>
+                        <span class="text-center mb-4">300 x 600</span>
+                          
+                        <div style="background-image:url(assets/GlobalMedia/Halfpage.png)" class="peca"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!------------------------------------------
+        ---------------- Page15 Sapo ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page15">
+            
+            <div class="row">
+                
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="sapo-destaquemercado">
+                        <h2 class="mt-2 mb-2 text-center">Destaque Mercado</h2>
+                        <span class="text-center mb-4">180 x 136</span>
+                          
+                        <div style="background-image:url(assets/Sapo/DestaqueMercado.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="sapo-halfpage">
+                        <h2 class="mt-2 mb-2 text-center">Halfpage</h2>
+                        <span class="text-center mb-4">300 x 600</span>
+                          
+                        <div style="background-image:url(assets/Sapo/Halfpage.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="sapo-header-xl-collapse">
+                        <h2 class ="mt-2 mb-2 text-center">Header XL Collapse</h2>
+                        <span class="text-center mb-4">1600 x 80</span>
+                          
+                        <div style="background-image:url(assets/Sapo/Header_XL_Collapse.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="sapo-header-xl-full">
+                        <h2 class="mt-2 mb-2 text-center">Header XL Full</h2>
+                        <span class="text-center mb-4">1500 x 462</span>
+                          
+                        <div style="background-image:url(assets/Sapo/Header_XL_Full.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="sapo-mrec">
+                        <h2 class="mt-2 mb-2 text-center">Medium Rectangle</h2>
+                        <span class="text-center mb-4">300 x 250</span>
+                          
+                        <div style="background-image:url(assets/Sapo/Medium_Rectangle.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="sapo-mobile1">
+                        <h2 class="mt-2 mb-2 text-center">Mobile 1</h2>
+                        <span class="text-center mb-4">320 x 50</span>
+                          
+                        <div style="background-image:url(assets/Sapo/Mobile1.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="sapo-mobile2">
+                        <h2 class="mt-2 mb-2 text-center">Mobile 2</h2>
+                        <span class="text-center mb-4">640 x 200</span>
+                          
+                        <div style="background-image:url(assets/Sapo/Mobile2.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="sapo-mobile3">
+                        <h2 class="mt-2 mb-2 text-center">Mobile 3</h2>
+                        <span class="text-center mb-4">728 x 90</span>
+                          
+                        <div style="background-image:url(assets/Sapo/Mobile3.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="sapo-mobile4">
+                        <h2 class="mt-2 mb-2 text-center">Mobile 4</h2>
+                        <span class="text-center mb-4">1456 x 180</span>
+                          
+                        <div style="background-image:url(assets/Sapo/Mobile4.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="sapo-splashmobile-landscape">
+                        <h2 class="mt-2 mb-2 text-center">Splash Mobile Landscape</h2>
+                        <span class="text-center mb-4">960 x 640</span>
+                          
+                        <div style="background-image:url(assets/Sapo/SplashMobileLandscape.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="sapo-splashmobile-portrait">
+                        <h2 class="mt-2 mb-2 text-center">Splash Mobile Portrait</h2>
+                        <span class="text-center mb-4">640 x 960</span>
+                          
+                        <div style="background-image:url(assets/Sapo/SplashMobilePortrait.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="sapo-taboolanative">
+                        <h2 class="mt-2 mb-2 text-center">Taboola Native</h2>
+                        <span class="text-center mb-4">1000 x 600</span>
+                          
+                        <div style="background-image:url(assets/Sapo/TaboolaNative.png)" class="peca"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!------------------------------------------
+        ---------------- Page16 Expresso ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page16">
+            
+            <div class="row">
+                
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="expresso-billboard">
+                        <h2 class="mt-2 mb-2 text-center">Billboard</h2>
+                        <span class="text-center mb-4">970 x 250 </span>
+                          
+                        <div style="background-image:url(assets/Expresso/Billboard.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="expresso-emailmarketing">
+                        <h2 class="mt-2 mb-2 text-center">Email Mkt</h2>
+                        <span class="text-center mb-4">640 x 532</span>
+                          
+                        <div style="background-image:url(assets/Expresso/EmailMkt.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="expresso-halfpage">
+                        <h2 class="mt-2 mb-2 text-center">Halfpage</h2>
+                        <span class="text-center mb-4">300 x 600</span>
+                          
+                        <div style="background-image:url(assets/Expresso/Halfpage.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="expresso-layer-interstitial-iab-standard-intra">
+                        <h2 class="mt-2 mb-2 text-center">Layer / Interstitial IAB Standard INTRA</h2>
+                        <span class="text-center mb-4">600 x 400</span>
+                          
+                        <div style="background-image:url(assets/Expresso/LayerInterstitial_IABStandardINTRA.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="expresso-mrec">
+                        <h2 class="mt-2 mb-2 text-center">Medium Rectangle</h2>
+                        <span class="text-center mb-4">300 x 250</span>
+                          
+                        <div style="background-image:url(assets/Expresso/Medium_Rectangle.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="expresso-splashscreen-interstitial-layerlandscape">
+                        <h2 class="mt-2 mb-2 text-center">Splash Screen / Interstitial / Layer Landscape</h2>
+                        <span class="text-center mb-4">480 x 320</span>
+                          
+                        <div style="background-image:url(assets/Expresso/SplashScreenInterstitialLayerLandscape.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="expresso-splashscreen-interstitial-layerportrait">
+                        <h2 class="mt-2 mb-2 text-center">Splash Screen / Interstitial / Layer Portrait</h2>
+                        <span class="text-center mb-4">320 x 480</span>
+                          
+                        <div style="background-image:url(assets/Expresso/SplashScreenInterstitialLayerPortrait.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="expresso-topo-entreconteudos">
+                        <h2 class="mt-2 mb-2 text-center">Topo Entreconteudos</h2>
+                        <span class="text-center mb-4">900 x 300</span>
+                          
+                        <div style="background-image:url(assets/Expresso/TopoEntreconteudos.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="expresso-video-preroll-incontent">
+                        <h2 class="mt-2 mb-2 text-center">Video / Pre-roll / In-content</h2>
+                        <span class="text-center mb-4">640 x 360</span>
+                          
+                        <div style="background-image:url(assets/Expresso/VideoPrerollIncontent.png)" class="peca"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!------------------------------------------
+        ---------------- Page17 Observador ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page17">
+            
+            <div class="row">
+                
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="observador-bannermobileapp">
+                        <h2 class="mt-2 mb-2 text-center">Banner Mobile App</h2>
+                        <span class="text-center mb-4">320 x 50 </span>
+                          
+                        <div style="background-image:url(assets/Observador/BannerMobileApp.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="observador-banner-nl">
+                        <h2 class="mt-2 mb-2 text-center">Banner NL</h2>
+                        <span class="text-center mb-4">900 x 300 </span>
+                          
+                        <div style="background-image:url(assets/Observador/BannerNL.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="observador-botaobannermobile">
+                        <h2 class="mt-2 mb-2 text-center">Botão Banner Mobile</h2>
+                        <span class="text-center mb-4">300 x 60 </span>
+                          
+                        <div style="background-image:url(assets/Observador/BotaoBannerMobile.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="observador-destaqueoverlay">
+                        <h2 class="mt-2 mb-2 text-center">Destaque Overlay</h2>
+                        <span class="text-center mb-4">340 x 192 </span>
+                          
+                        <div style="background-image:url(assets/Observador/DestaqueOverlay.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="observador-halfpage">
+                        <h2 class="mt-2 mb-2 text-center">Halfpage</h2>
+                        <span class="text-center mb-4">300 x 600 </span>
+                          
+                        <div style="background-image:url(assets/Observador/Halfpage.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="observador-halfpage-expand">
+                        <h2 class="mt-2 mb-2 text-center">Halfpage Expand</h2>
+                        <span class="text-center mb-4">600 x 600 </span>
+                          
+                        <div style="background-image:url(assets/Observador/HalfpageExpand.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="observador-interstitial">
+                        <h2 class="mt-2 mb-2 text-center">Interstitial</h2>
+                        <span class="text-center mb-4">990 x 600 </span>
+                          
+                        <div style="background-image:url(assets/Observador/Interstitial.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="observador-intromobile">
+                        <h2 class="mt-2 mb-2 text-center">Intro Mobile</h2>
+                        <span class="text-center mb-4">300 x 480 </span>
+                          
+                        <div style="background-image:url(assets/Observador/IntroMobile.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="observador-manchete">
+                        <h2 class="mt-2 mb-2 text-center">Manchete</h2>
+                        <span class="text-center mb-4">1200 x 220 </span>
+                          
+                        <div style="background-image:url(assets/Observador/Manchete.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="observador-mrec-expand">
+                        <h2 class="mt-2 mb-2 text-center">Medium Rectangle Expand</h2>
+                        <span class="text-center mb-4">600 x 500 </span>
+                          
+                        <div style="background-image:url(assets/Observador/Medium_Rectangle_Expand.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="observador-mrec">
+                        <h2 class="mt-2 mb-2 text-center">Medium Rectangle</h2>
+                        <span class="text-center mb-4">300 x 250 </span>
+                          
+                        <div style="background-image:url(assets/Observador/Medium_Rectangle.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="observador-native">
+                        <h2 class="mt-2 mb-2 text-center">Native</h2>
+                        <span class="text-center mb-4">307 x 208 </span>
+                          
+                        <div style="background-image:url(assets/Observador/Native.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="observador-pushdown">
+                        <h2 class="mt-2 mb-2 text-center">Pushdown</h2>
+                        <span class="text-center mb-4">990 x 50 </span>
+                          
+                        <div style="background-image:url(assets/Observador/Pushdown1.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="observador-pushdown-open">
+                        <h2 class="mt-2 mb-2 text-center">Pushdown Open</h2>
+                        <span class="text-center mb-4">990 x 450 </span>
+                          
+                        <div style="background-image:url(assets/Observador/Pushdown2.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="observador-video-preroll-incontent"> 
+                        <h2 class="mt-2 mb-2 text-center">Video / Pre-roll / In-content</h2>
+                        <span class="text-center mb-4">640 x 360 </span>
+                          
+                        <div style="background-image:url(assets/Observador/VideoPrerollInContent.png)" class="peca"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!------------------------------------------
+        ---------------- Page18 Cofina ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page18">
+            
+            <div class="row">
+                
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="cofina-halfpage">
+                        <h2 class="mt-2 mb-2 text-center">Halfpage</h2>
+                        <span class="text-center mb-4">300 x 600 </span>
+                          
+                        <div style="background-image:url(assets/Cofina/Halfpage.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="cofina-layer-masterhead-1">
+                        <h2 class="mt-2 mb-2 text-center">Layer e MasterHead 1</h2>
+                        <span class="text-center mb-4">550 x 480 </span>
+                          
+                        <div style="background-image:url(assets/Cofina/LayerMastHead.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="cofina-layer-masterhead-2">
+                        <h2 class="mt-2 mb-2 text-center">Layer e MasterHead 2</h2>
+                        <span class="text-center mb-4">970 x 250 </span>
+                          
+                        <div style="background-image:url(assets/Cofina/LayerMastHead2.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="cofina-layer-masterhead-3">
+                        <h2 class="mt-2 mb-2 text-center">Layer e MasterHead 3</h2>
+                        <span class="text-center mb-4">728 x 90 </span>
+                          
+                        <div style="background-image:url(assets/Cofina/LayerMastHead3.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="cofina-layer-masterhead-4">
+                        <h2 class="mt-2 mb-2 text-center">Layer e MasterHead 4</h2>
+                        <span class="text-center mb-4">300 x 100 </span>
+                          
+                        <div style="background-image:url(assets/Cofina/LayerMastHead4.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="cofina-mrec">
+                        <h2 class="mt-2 mb-2 text-center">Medium Rectangle</h2>
+                        <span class="text-center mb-4">300 x 250 </span>
+                          
+                        <div style="background-image:url(assets/Cofina/Medium_Rectangle.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="cofina-splash-mobile-landscape-intro">
+                        <h2 class="mt-2 mb-2 text-center">Splash Mobile Landscape Intro</h2>
+                        <span class="text-center mb-4">800 x 600 </span>
+                          
+                        <div style="background-image:url(assets/Cofina/SplashMobileLandscapeIntro.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="cofina-splash-mobile-portrait-intro">
+                        <h2 class="mt-2 mb-2 text-center">Splash Mobile Portrait Intro</h2>
+                        <span class="text-center mb-4">768 x 1024 </span>
+                          
+                        <div style="background-image:url(assets/Cofina/SplashMobilePortraitIntro.png)" class="peca"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!------------------------------------------
+        ---------------- Page19 OLX ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page19">
+            
+            <div class="row">
+                
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="olx-halfpage">
+                        <h2 class="mt-2 mb-2 text-center">Halfpage</h2>
+                        <span class="text-center mb-4">300 x 600 </span>
+                          
+                        <div style="background-image:url(assets/OLX/Halfpage.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="olx-mrec">
+                        <h2 class="mt-2 mb-2 text-center">Medium Rectangle</h2>
+                        <span class="text-center mb-4">300 x 250 </span>
+                          
+                        <div style="background-image:url(assets/OLX/Medium_Rectangle.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="olx-mobilebanner">
+                        <h2 class="mt-2 mb-2 text-center">Mobile Banner</h2>
+                        <span class="text-center mb-4">320 x 50 </span>
+                          
+                        <div style="background-image:url(assets/OLX/Mobile_Banner.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="olx-takeover">
+                        <h2 class="mt-2 mb-2 text-center">Takeover</h2>
+                        <span class="text-center mb-4">1920 x 1080 </span>
+                          
+                        <div style="background-image:url(assets/OLX/Takeover.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="olx-imagemtopo">
+                        <h2 class="mt-2 mb-2 text-center">Imagem Topo</h2>
+                        <span class="text-center mb-4">901 x 210 </span>
+                          
+                        <div style="background-image:url(assets/OLX/ImagemTopo.png)" class="peca"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!------------------------------------------
+        ---------------- Page20 Record ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page20">
+            
+            <div class="row">
+                
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="record-masthead-desktop">
+                        <h2 class="mt-2 mb-2 text-center">Masthead Desktop</h2>
+                        <span class="text-center mb-4">1240 x 220 </span>
+                          
+                        <div style="background-image:url(assets/Record/MastheadDesktop.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                 <!--Peca-->
+                 <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="record-masthead-mobile">
+                        <h2 class="mt-2 mb-2 text-center">Masthead Mobile</h2>
+                        <span class="text-center mb-4">320 x 100 </span>
+                          
+                        <div style="background-image:url(assets/Record/MastheadMobile.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                 <!--Peca-->
+                 <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="record-masthead-tablet">
+                        <h2 class="mt-2 mb-2 text-center">Masthead Tablet</h2>
+                        <span class="text-center mb-4">728 x 90 </span>
+                          
+                        <div style="background-image:url(assets/Record/MastheadTablet.png)" class="peca"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!------------------------------------------
+        ---------------- Page21 O Jogo ---------------------
+        ------------------------------------------->
+        <div class=" col-md-9 card p-5 lateral-dir pages" 
+        
+        id="page21">
+            
+            <div class="row">
+                
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="ojogo-superboard-desktop">
+                        <h2 class="mt-2 mb-2 text-center">Superboard Desktop</h2>
+                        <span class="text-center mb-4">1260 x 200 </span>
+                          
+                        <div style="background-image:url(assets/OJogo/SuperboardDesktop.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="ojogo-superboard-mobile">
+                        <h2 class="mt-2 mb-2 text-center">Superboard Mobile</h2>
+                        <span class="text-center mb-4">320 x 100 </span>
+                          
+                        <div style="background-image:url(assets/OJogo/SuperboardMobile.png)" class="peca"></div>
+                    </div>
+                </div>
+
+                <!--Peca-->
+                <div class=" col-md-4 p-2 ">
+                    <div class="card option p-3" data-module="ojogo-superboard-tablet">
+                        <h2 class="mt-2 mb-2 text-center">Superboard Tablet</h2>
+                        <span class="text-center mb-4">728 x 90 </span>
+                          
+                        <div style="background-image:url(assets/OJogo/SuperboardTablet.png)" class="peca"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!--Autentication-->
+        <div class="row position-fixed authentication">
+            <div class="col-md-12 mb-2">
+                <span class="">Welcome <b>Deek</b></span>
+            </div>
+            <div class="col-md-12">
+                <button type="button" id="logout" class="btn btn-lg btn-block btn-primary mb-2">Logout</button>
+            </div>
+            <div class="col-md-12">
+                <p class="arrow">•</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+</div>
+
+
+<div id="taskFeed">
+    <img src="assets/ok.svg"/>
+</div>
+
+<script>
+    //Animação que o Canuto está-se a cagar!
+    var animaBody;
+    var bodyBody;
+    var cleanTasks;
+    var taskOk;
+    animaBody = document.getElementById("create-btn");
+    bodyBody = document.getElementById("create-tasks");
+    cleanTasks = document.getElementById("cleanSelected");
+    taskOk = document.getElementById("taskFeed");
+
+    animaBody.onclick = function(){
+        bodyBody.classList.add("anima-body");
+        setTimeout(() => {
+            taskOk.classList.add("imageAppear");
+        }, 3000);
+        setTimeout(() => {
+            bodyBody.classList.remove("anima-body");
+            cleanTasks.classList.add("anima-btn");
+            taskOk.classList.remove("imageAppear");
+        }, 5000);
+        
+    };
+
+    cleanTasks.onclick = function(){
+        cleanTasks.classList.remove("anima-btn");
+    };
+</script>
+
+</body>
+</html>
+
+
+
